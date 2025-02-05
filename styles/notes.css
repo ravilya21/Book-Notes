@@ -1,0 +1,139 @@
+body {
+    font-family: "Lora", serif;
+    background-color: #ffe6f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff99cc;
+}
+
+header p {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.6;
+    max-width: 800px;
+}
+h1{
+    font-size: 2.5em;
+    color: #ff99cc;
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ffccdd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-item .book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-cover {
+    float: left;
+    margin-right: 15px;
+    max-width: 150px;
+    max-height: 220px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.book-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.book-item h2 {
+    font-size: 1.5em;
+    color: #ff66b2;
+    margin-bottom: 10px;
+}
+
+.book-item .book-info {
+    font-size: 1em;
+    color: #ff66b2;
+}
+
+.book-item .book-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+.notes-list {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list h2 {
+    font-size: 1.8em;
+    color: #ff66b2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.note-item {
+    background-color: #ffccdd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-item p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.back_button {
+    display: inline-block;
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back_button:hover {
+    background-color: #ff99cc;
+}
+
+a {
+    text-decoration: none;
+  }

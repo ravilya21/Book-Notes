@@ -1,0 +1,170 @@
+/* styles/main.css */
+
+body {
+    font-family: "Lora", serif;
+    
+    background-color: #ffe6f0; /* Пастельно-розовый фон */
+    color: #333; /* Цвет текста */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    max-width: 800px;      /* Максимальная ширина коробки */
+    margin: 30px auto;     /* Центрирование блока и отступ сверху/снизу */
+    padding: 20px;         /* Внутренние отступы для "воздуха" */
+    background-color: #f9f9f9; /* Светлый фон для аккуратности */
+    border: 2px solid #ccc;    /* Серая рамка */
+    border-radius: 8px;        /* Скруглённые углы */
+    text-align: left;        /* Центрирование текста */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff99cc;
+}
+
+header h2 {
+    font-size: 1.8em;
+    color: #ff66b2;
+}
+
+header p {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sorting p {
+    
+    font-size: 1.2em;
+    color: #ff66b2;
+}
+
+.sorting form {
+    display: flex;
+    gap: 10px;
+}
+
+.sort-option {
+    font-family: "Turret Road", serif; 
+    background-color: #ffccdd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-option:hover {
+    background-color: #ff99cc;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ffccdd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-item .book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-cover {
+    float: left;
+    margin-right: 15px;
+    max-width: 150px;
+    max-height: 220px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.book-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.book-item h2 {
+    font-size: 1.5em;
+    color: #ff66b2;
+    margin-bottom: 10px;
+}
+
+.book-item .book-info {
+    font-size: 1em;
+    color: #ff66b2;
+}
+
+.book-item .book-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.notes {
+    margin-top: 15px;
+}
+
+.notes h3 {
+    font-size: 1.2em;
+    color: #ff66b2;
+}
+
+.notes a {
+    color: #ff66b2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.notes a:hover {
+    text-decoration: underline;
+}
+
+.notes-list {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list h2 {
+    font-size: 1.8em;
+    color: #ff66b2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+  }

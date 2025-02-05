@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes for Book</title>
+  <link rel="stylesheet" href="/styles/notes.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="book-list"> 
+    <a href="/"><h1><strong>Ravilya Rafikova</strong></h1></a>
+    
+      <div class="book-item">
+        <div class = "book-info">
+        <img src="<%= book.coverImage%>" alt="Cover image" class="book-cover">
+        <h2><%= book.title %></h2>
+        <p ><strong>Rating:</strong> <%= book.rating %>/10</p>
+        <p><strong>Review date:</strong> <%= book.review_date %></p>
+        <p></p><strong>ISBN: </strong><%= book.cover %></p>
+        </div>
+        <p><strong>Description:</strong> <%= book.review_description %></p>
+       
+        </div>
+     
+    </div>
+
+  <!-- Список заметок -->
+  <div class="notes-list">
+    <h2>Notes:</h2>
+    <% notes.forEach(note => { %>
+      <div class="note-item">
+        <p><%- note.note.replace(/\n/g, '<br>') %></p>
+      </div>
+    <% }) %>
+  </div>
+
+  <a href="/" class="back_button">Back to all books</a> <!-- Ссылка на главную страницу -->
+</body>
+</html>

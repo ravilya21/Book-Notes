@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ravilya Rafikova</h1>
+        <h2>Books I’ve read</h2>
+        <p> Tiny summary but <strong>detailed notes for each.</strong> Use the ISBN number to find it from your local library or anywhere else.<strong> This page will constantly update as I read more,</strong> so bookmark it if you want to check back in a few months. </p>
+        <p>Sorted with my <strong>top recommendations up top.</strong> Sort by title, newest, or best.</p>
+      </header>
+    
+      <!-- Сортировка -->
+      <div class="sorting">
+        <p>Sort by:</p>
+        <form action="/" method="GET">
+          <button name="sort" value="title" class="sort-option">Title</button>
+          <button name="sort" value="newest" class="sort-option">Newest</button>
+          <button name="sort" value="best" class="sort-option">Best</button>
+        </form>
+      </div>
+     
+      <div class="book-list">
+        <% for(let book of listOfBooks) {%>
+          <div class="book-item">
+            <div class = "book-info">
+              <a href="/notes/<%= book.id %>"> <img src="<%= book.coverImage%>" alt="Cover image" class="book-cover" ></a>
+              <a href="/notes/<%= book.id %>"><h2><%= book.title %></h2></a>
+            <p ><strong>Rating:</strong> <%= book.rating %>/10</p>
+            <p><strong>Review date:</strong> <%= book.review_date %></p>
+            </div>
+            <p><strong>Description:</strong> <%= book.review_description %></p>
+            <div class="notes">
+              <a href="/notes/<%= book.id %>"><h3>Notes</h3></a>
+                <p>Here you can see detailed notes for this book. 
+                <a href="/notes/<%= book.id %>" >Click here to view the notes.</a></p>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </body>
+      </html>
