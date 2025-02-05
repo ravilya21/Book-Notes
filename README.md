@@ -39,7 +39,7 @@ npm install
 
 3️⃣ Set Up PostgreSQL Database
 Create a new PostgreSQL database named book_notes.
-Change the password in the code;
+Change the password in the code inside index.js;
 
 use tables.sql file to create needed tables. After insert data with books.csv and notes.csv ( You can add more info in notes.csv);
 
